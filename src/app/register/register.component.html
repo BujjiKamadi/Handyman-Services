@@ -1,0 +1,90 @@
+<div class="content">
+  <div class="ui-g">
+    <div class="ui-g-3"></div>
+    <div class="ui-g-5">
+      <p-tabView>
+        <p-tabPanel header="Handyman">
+            <form [formGroup]="handymanRegisterForm" (ngSubmit)="onSubmit()">
+                <div class="container">
+                  <h1>Register</h1>
+                  <p>Please fill in this form to create an account.</p>
+                  <hr>            
+                  <label for="sname"><b>ServiceName</b></label>
+                  <input type="text" pInputText placeholder="Enter ServiceName" formControlName="sName"/>
+                                          
+                  <!-- <label for="email"><b>UserId</b></label>
+                  <input type="text" placeholder="Enter UserId" name="uid" required> -->
+                          
+                  <label for="email"><b>ContactNo</b></label>
+                  <input type="text" pInputText placeholder="Enter Contact Number" formControlName="contactNo"/>
+              
+              
+                  <label for="email"><b>UserName</b></label>
+                  <input type="text" pInputText placeholder="Enter Username" formControlName="uName"/>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" pPassword placeholder="Enter Username" formControlName="pwd"/>
+              
+                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                  <input type="password" pPassword placeholder="Re-enter Username"/>
+                  <hr>
+              
+                  <button pButton type="submit" label="Register" class="registerbtn"></button>
+                </div>
+              
+                <div class="container signin">
+                  <p>Already have an account? <a href="#">Sign in</a>.</p>
+                </div> 
+              </form>
+          
+            
+        </p-tabPanel>
+        <p-tabPanel header="Customer">
+            <form >
+                <div class="container">
+                  <h1>Register</h1>
+                  <p>Please fill in this form to create an account.</p>
+                  <hr>
+            
+                  <label for="email"><b>ServiceName</b></label>
+                  <input type="text" placeholder="Enter ServiceName" name="servicename" required>
+            
+                  
+            
+                  <label for="email"><b>UserId</b></label>
+                  <input type="text" placeholder="Enter UserId" name="uid" required>
+              
+            
+                  <label for="email"><b>ContactNo</b></label>
+                  <input type="text" placeholder="Enter ContactNo" name="ContactNo" required>
+              
+              
+                  <label for="email"><b>UserName</b></label>
+                  <input type="text" placeholder="Enter UserName" name="uname" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                  <hr>
+              
+                  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                  <button type="submit" class="registerbtn">Register</button>
+                </div>
+              
+                <div class="container signin">
+                  <p>Already have an account? <a href="#">Sign in</a>.</p>
+                </div>
+              </form>
+          
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+    <div class="ui-g-1"></div>
+  </div><br /><br />
+  <!-- <div>
+      <h2>PROJECT GALLERY</h2>
+      <p-galleria [images]="images" panelWidth="500" panelHeight="500" [showCaption]="true"></p-galleria>
+  </div> -->
+</div>

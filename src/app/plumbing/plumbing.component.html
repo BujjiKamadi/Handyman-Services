@@ -1,0 +1,44 @@
+<div *ngFor="let handyManObject of handymanFilteredList">
+  <div class="ui-g-6">
+    <p-card>
+        <div class="ui-g">
+            <div class="ui-g-4">
+                <h3>{{handyManObject.hName | uppercase}}</h3>
+                <img src="" width="60px" height="60px">
+            </div>
+            <div class="ui-g-8">
+              <table width="70%">
+                <tr>
+                  <td><b>Service :</b></td>
+                  <td> {{handyManObject.hServiceName}}</td>
+                </tr>
+                <tr>
+                    <td><b>Role :</b></td>
+                    <td>{{handyManObject.hRole}}</td>
+                  </tr>
+                  <tr>
+                      <td><b>Wages :</b></td>
+                      <td>{{handyManObject.hWages}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Contact :</b></td>
+                        <td>{{handyManObject.hPhone}}</td>
+                      </tr>
+              </table>
+            </div>
+
+        </div>
+    </p-card>
+  </div>
+</div>
+
+<!-- <div class="ui-g-3">
+    <h4>{{handyManObject.hName}}</h4>
+    <img src="" width="60px" height="60px">
+  </div>
+  <div class="ui-g-9">
+    <p>{{handyManObject.hServiceName}}</p>
+    <p>{{handyManObject.hRole}}</p>
+    <p>{{handyManObject.hWages}}</p>
+    <p>{{handyManObject.hPhone}}</p>
+  </div> -->

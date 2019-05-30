@@ -1,0 +1,20 @@
+<p-card id="sidebar">
+  <p-card class="sidebarCard"><a  (click)="showServices()">Services</a></p-card><br >
+  <p-card ><a  (click)="showServiceDetails(10)">Plumbing</a></p-card><br >
+  <p-card><a  (click)="showServiceDetails(20)">Electrical</a></p-card><br >
+  <p-card><a  (click)="showProfile()">Carpentary</a></p-card><br >
+  <p-card><a  (click)="showProfile()">Painting and Decorating</a></p-card><br >
+  <p-card><a  (click)="showProfile()">Roofing Service</a></p-card><br >
+  <p-card><a  (click)="showProfile()">Tiling</a></p-card><br >
+  <p-card><a  (click)="showProfile()">Remodeling</a></p-card><br >
+  <p-card><a  (click)="showProfile()">Emergency Repairs</a></p-card><br >
+  <!-- <a routerLink="profile" routerLinkActive="active">Profile</a> -->
+  <!-- <a href="#login">Map Practice</a>
+  <a href="#login">Filter Practice</a> -->
+  </p-card>
+<div style="margin : 30px 30px 30px 260px">
+  <router-outlet></router-outlet>
+</div>
+
+
+<!-- <p-card><a  (click)="showProfile()">Profile</a></p-card><br > -->

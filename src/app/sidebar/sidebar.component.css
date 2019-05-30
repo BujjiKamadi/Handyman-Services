@@ -1,0 +1,30 @@
+#sidebar{
+    background-color: #ffffff;
+    color: #333333;
+    /* padding: 0.571em 1em; */
+    border: 1px solid #c8c8c8;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    position : fixed;
+    /* overflow-y: scroll; */
+}
+#sidebar a{
+    width: 100%;
+    display: block;
+    padding:4px 4px 4px 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+}
+.sidebarCard{
+  background-color: rgb(76, 163, 175); /* Green */
+  border: none;
+  color: rgb(11, 87, 131);
+}
+.ui-card-body{
+    background-color: aqual
+}
+
+
+

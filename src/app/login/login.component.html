@@ -1,0 +1,51 @@
+<div class="content">
+  <div class="ui-g">
+    <div class="ui-g-3"></div>
+    <div class="ui-g-5">
+      <p-tabView>
+        <p-tabPanel header="Handyman">
+              <form [formGroup]="handymanLoginForm" (ngSubmit)="onHandymanLogin()">
+                  <h1>Login</h1>
+                  <hr>
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" pInputText placeholder="Enter Username" formControlName="HandymanUserName"/>
+    
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" pInputText placeholder="Enter password" formControlName="HandymanPwd"/>
+
+
+                  
+    
+                  <button pButton type="submit" label="HandyMan Login" ></button>
+                  <p *ngIf="errMsg" id="error">Username or password is wrong, please enter correct credentials</p>
+
+                  <!-- <nav>
+                      <a *ngIf="!logged" routerLink="/login"> incorrect Username and password </a>
+                  </nav> -->
+
+              </form>
+            </p-tabPanel>
+        <p-tabPanel header="Customer">
+          <form [formGroup]="customerLoginForm" (ngSubmit)="onSubmit()">          
+              <h1>Login</h1>
+              <hr>
+              <label for="custName"><b>Username</b></label>
+              <input type="text" pInputText placeholder="Enter Username" formControlName="CustUserName"/>
+
+              <label for="custPwd"><b>Password</b></label>
+              <input type="password" pInputText placeholder="Enter password" formControlName="CustPwd"/>
+
+              <!-- <button pButton type="button" label="Customer Login" routerLinkActive="active" routerLink="sidebar" ></button> -->
+              <button pButton type="submit" label="Customer Login"  ></button>
+          </form>
+        </p-tabPanel>       
+      </p-tabView>
+    </div>
+    <div class="ui-g-4"></div>
+    <br /><br />
+  </div>
+  <div>
+      <h2>PROJECT GALLERY</h2>
+      <p-galleria [images]="images" panelWidth="500" panelHeight="500" [showCaption]="true"></p-galleria>
+  </div>
+</div>
